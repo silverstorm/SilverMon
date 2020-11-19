@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :registerable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable,
          :recoverable, :validatable,
-         :confirmable, :lockable, :timeoutable, :trackable,
+         :confirmable, :lockable, :trackable,
          :pwned_password
 
   before_create :set_token_on_create
