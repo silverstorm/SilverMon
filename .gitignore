@@ -44,4 +44,4 @@ pickle-email-*.html
 Procfile
 
 .env
-.rbvenv-vars
+.rbenv-vars

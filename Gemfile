@@ -42,7 +42,20 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-gem 'rspec-rails'
+gem 'activerecord-session_store'
+
+gem 'devise'
+gem "devise-pwned_password"
+gem 'authtrail'
+gem 'maxminddb' ## Geolite
+
+gem 'activerecord-nulldb-adapter'
+
+gem 'any_login'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 4.0.1'
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
