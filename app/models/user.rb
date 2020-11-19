@@ -9,7 +9,8 @@ class User < ApplicationRecord
   before_create :set_token_on_create
 
   validates :username, uniqueness: true
-  validates :email, presence: true
+  validates :token,    uniqueness: true
+  validates :email,    presence: true
 
 
   protected
